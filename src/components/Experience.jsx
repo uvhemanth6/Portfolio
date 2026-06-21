@@ -21,7 +21,7 @@ const Experience = () => {
     {
       id: 2,
       role: 'AI / ML Learner',
-      company: 'Self-initiated Research & Open Source',
+      company: 'Self-Learner',
       duration: 'August 2024 - Present',
       location: 'SRM University AP',
       description: 'Built deep learning and retrieval-augmented systems focusing on explainability.',

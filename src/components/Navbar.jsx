@@ -41,6 +41,34 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
     }
   };
 
+  const handleScrollToSection = (e, href) => {
+    e.preventDefault();
+    
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    
+    // Update URL hash immediately
+    window.history.pushState(null, '', href);
+    
+    // Close the mobile menu first
+    setIsOpen(false);
+
+    if (element) {
+      const navbarHeight = isScrolled ? 70 : 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - navbarHeight;
+      
+      // Delay the scrollTo slightly to prevent the closing animation or re-render
+      // from canceling the smooth scroll
+      setTimeout(() => {
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-3 shadow-lg' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,6 +106,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
                 <a 
                   key={link.name} 
                   href={link.href}
+                  onClick={(e) => handleScrollToSection(e, link.href)}
                   className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
                 >
                   {link.name}
@@ -139,7 +168,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleScrollToSection(e, link.href)}
                   className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
                 >
                   {link.name}
