@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, ShieldCheck, ExternalLink, Calendar } from 'lucide-react';
 
@@ -50,7 +49,7 @@ const Certifications = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h4 className="text-xs font-bold tracking-widest text-indigo-600 dark:text-cyan-400 uppercase mb-2">Credentials</h4>
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 dark:text-white">
-            Licenses & <span className="text-gradient">Certifications</span>
+            <span className="text-gradient">Certifications</span>
           </h2>
           <div className="w-12 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
         </div>

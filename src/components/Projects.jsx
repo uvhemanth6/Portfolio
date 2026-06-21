@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, ExternalLink, Brain, Activity, BookOpen, Zap, Shield, Heart, HelpCircle, GraduationCap, X, CheckCircle } from 'lucide-react';
+import { Search, ExternalLink, Brain, Activity, BookOpen, Zap, Shield, Heart, HelpCircle, X, CheckCircle } from 'lucide-react';
 import { GithubIcon } from './SocialIcons';
 
 const Projects = ({ searchQuery, setSearchQuery }) => {
@@ -173,22 +173,22 @@ const Projects = ({ searchQuery, setSearchQuery }) => {
       id: 8,
       name: 'Campus Care',
       category: 'Full Stack',
-      subcategory: 'Academic Administration',
-      tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT Authentication', 'REST APIs'],
-      short: 'University logistics dashboard coordinating grade books, notices, and attendance.',
-      detailed: 'Campus Care streamlines academic administration. It provides students an online view of class attendance averages, course directories, and semester grades. College registrars manage student listings, document logs, and issue public campus alerts through an administrative control panel.',
+      subcategory: 'Student Well-being Platform',
+      tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Socket.io', 'JWT Authentication', 'Tailwind CSS'],
+      short: 'A mental health support platform for students featuring motivational resources, interactive games, and chat-based engagement to reduce stress and improve well-being.',
+      detailed: 'Campus Care is a mental health and support platform designed specifically for university students. To counter academic burnout and everyday stress, the application aggregates daily motivational resources, runs client-side stress-relief games, and provides interactive chat systems. Utilizing a full stack MERN structure, the app handles session tokens and serves content dynamically based on student preference profiles.',
       features: [
-        'Academic grade registry',
-        'Interactive attendance trackers',
-        'Role-based administrator panels',
-        'Official notice bulletin boards',
-        'Event calendars & schedules',
-        'JSON REST api architecture'
+        'Motivational resource catalogs',
+        'Interactive stress-relief micro-games',
+        'Real-time chat-based engagement',
+        'Daily mood & well-being metrics',
+        'Secure user session management',
+        'Responsive interactive dashboard'
       ],
       status: 'Completed',
       github: 'https://github.com/uvhemanth6/Campus-Care',
       demo: 'https://github.com/uvhemanth6/Campus-Care',
-      icon: <GraduationCap className="text-indigo-500" size={24} />,
+      icon: <Heart className="text-indigo-500" size={24} />,
       color: 'from-indigo-500 to-purple-500'
     }
   ];

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 
@@ -21,7 +20,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      role: 'AI / ML Open Source Contributor',
+      role: 'AI / ML Learner',
       company: 'Self-initiated Research & Open Source',
       duration: 'August 2024 - Present',
       location: 'SRM University AP',
