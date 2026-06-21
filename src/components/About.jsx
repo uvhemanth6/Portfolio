@@ -84,11 +84,15 @@ const About = () => {
             </h3>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
-              I am U. Venkata Hemanth, a Computer Science student currently pursuing my B.Tech at SRM University AP, graduating in 2027. Passionate about Web Development and Artificial Intelligence, I have experience in Frontend Technologies (HTML, CSS, JavaScript) and Machine Learning pipelines (TensorFlow, PyTorch, CNN, NLP).
+              I am U. Venkata Hemanth, a Computer Science and Engineering student at SRM University AP, graduating in 2027. I am passionate about building scalable software solutions across Full Stack Development, Artificial Intelligence, Machine Learning, and Generative AI. My expertise spans the MERN Stack, modern frontend frameworks, backend development, REST APIs, databases, and cloud-ready applications, enabling me to create end-to-end products from concept to deployment.
             </p>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
-              I enjoy building interactive, responsive, and user-friendly web applications while focusing on performance and clean logic. With a strong foundation in algorithm design and problem-solving, I aim to merge Full Stack technologies with state-of-the-art GenAI models to develop solutions that make a real difference.
+              Beyond web development, I work extensively with Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Transformer-based architectures to solve real-world problems through intelligent systems. I enjoy combining robust software engineering principles with cutting-edge AI technologies to develop impactful applications that are both innovative and user-centric.
+            </p>
+
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
+              Driven by curiosity and continuous learning, I actively explore Data Structures & Algorithms, and emerging AI advancements while building projects that bridge the gap between traditional software development and next-generation intelligent solutions.
             </p>
 
             {/* Stats Grid */}
