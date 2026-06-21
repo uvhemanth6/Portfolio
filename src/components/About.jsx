@@ -84,15 +84,11 @@ const About = () => {
             </h3>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
-              I am U. Venkata Hemanth, a Computer Science and Engineering student at SRM University AP, graduating in 2027. I am passionate about building scalable software solutions across Full Stack Development, Artificial Intelligence, Machine Learning, and Generative AI. My expertise spans the MERN Stack, modern frontend frameworks, backend development, REST APIs, databases, and cloud-ready applications, enabling me to create end-to-end products from concept to deployment.
+              I'm U. Venkata Hemanth, a Computer Science student at SRM University AP with a strong interest in Full Stack Development, Artificial Intelligence, and Generative AI. I enjoy building modern web applications using the MERN stack and creating intelligent solutions that solve real-world problems.
             </p>
 
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
-              Beyond web development, I work extensively with Machine Learning, Deep Learning, Computer Vision, Natural Language Processing, and Transformer-based architectures to solve real-world problems through intelligent systems. I enjoy combining robust software engineering principles with cutting-edge AI technologies to develop impactful applications that are both innovative and user-centric.
-            </p>
-
-            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-light text-base">
-              Driven by curiosity and continuous learning, I actively explore Data Structures & Algorithms, and emerging AI advancements while building projects that bridge the gap between traditional software development and next-generation intelligent solutions.
+              My experience spans frontend and backend development, machine learning, deep learning, NLP, and transformer-based AI models. I am passionate about learning new technologies, improving my problem-solving skills, and developing impactful projects that combine software engineering with cutting-edge AI innovations.
             </p>
 
             {/* Stats Grid */}
